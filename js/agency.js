@@ -25,9 +25,4 @@
         offset: 56
     });
     
-    // 서브메뉴 마우스 오버
-    $('.nav-item').hover(function () {
-//        $('.subbar').attr('class', 'on');
-    });
-
 })(jQuery);

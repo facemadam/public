@@ -45,10 +45,9 @@ section h2.section-heading {
 }
 
 section h3.section-subheading {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
-    font-style: italic;
-    margin-bottom: 75px;
+    margin-bottom: 15px;
     text-transform: none;
 }
 
@@ -81,6 +80,11 @@ section h3.section-subheading {
 .btn-primary:active, .btn-primary:focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
     box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+}
+
+.badge-primary {
+    background-color: #fed136;
+    border-color: #fed136;
 }
 
 ::selection {
@@ -148,80 +152,11 @@ img::-moz-selection {
     }
 }
 
-.subbar {
-    display: none;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    z-index: 10;
-    width: 100%;
-}
-
-#mainSub {
-    background: #f3f3f3;
-}
-
-#mainSub.on { 
-    display: block;
-}
-
-#mainSub.on .subbar-sub { 
-    float: left;
-    position: relative;
-    width: 100%;
-    margin: 0;
-    padding: 45px 0 45px 0;
-}
-
-#mainSub.on .subbar-sub .subbar-item { 
-    display: inline-block;
-    margin-right: 80px;
-    font-size: 1rem;
-    vertical-align: top;
-    max-width:224px;
-}
-
-#mainSub.on .subbar-sub .subbar-item:last-child { 
-    margin-right: 0;
-}
-
-#mainSub.on .subbar-sub .subbar-item p { 
-    display: block;
-    margin-bottom: 10px;
-    font-size: 100%;
-    font-weight:700;
-    letter-spacing: 1px;
-}
-
-#mainSub.on .subbar-sub .subbar-item ul { 
-    padding-left: 0;
-}
-
-#mainSub.on .subbar-sub .subbar-item ul li { 
-    list-style: none;
-    margin-top: 5px;
-    font-size: 95%;
-    letter-spacing: 1px;
-}
-
-#mainSub .subbar-sub .subbar-item .sub-link {
-    font-size: 90%;
-    font-weight: 600;
-    padding: 0.75em 0;
-    letter-spacing: 1px;
-    text-decoration: none;
-    color: #000;
-}
-
-#mainSub .subbar-sub .subbar-item .sub-link:hover {
-    color: #fed136;
-}
-
 /* 헤더 */
-header.masthead {
+#home {
     text-align: center;
     color: white;
-    margin-top: 50px;
+    margin-top: 55px;
     padding: 150px 0;
     background-image: url("../img/header-bg.jpg");
     background-repeat: no-repeat;
@@ -230,31 +165,36 @@ header.masthead {
     background-size: cover;
 }
 
-.carousel-caption {
+#home .carousel-caption {
     z-index: 10;
+    padding-bottom: 150px;
 }
 
-.carousel-item {
-    height: 32rem;
+#home .carousel-item {
+    height: 38rem;
 }
 
-.carousel-item > img {
+#home .carousel-item > img {
     position: absolute;
     top: 0;
     left: 0;
     min-width: 100%;
-    height: 32rem;
+    height: 38rem;
 }
 
 @media (min-width: 768px) {
-    .carousel-caption p {
+    #masthead .carousel-caption p {
         margin-bottom: 1.25rem;
         font-size: 1.25rem;
         line-height: 1.4;
     }
 }
 
-.service-heading {
+#about {
+    padding: 150px 0;
+}
+
+#about .heading {
     margin: 15px 0;
     text-transform: none;
 }
@@ -320,8 +260,7 @@ header.masthead {
 }
 
 #portfolio .portfolio-item .portfolio-caption p {
-    font-size: 16px;
-    font-style: italic;
+    font-size: 15px;
     margin: 0;
 }
 
@@ -359,8 +298,7 @@ header.masthead {
 }
 
 .portfolio-modal .modal-content p.item-intro {
-    font-size: 16px;
-    font-style: italic;
+    font-size: 15px;
     margin: 20px 0 30px;
 }
 
@@ -600,25 +538,30 @@ header.masthead {
     }
 }
 
-.team-member {
+.member {
     margin-bottom: 50px;
     text-align: center;
 }
 
-.team-member img {
+.member img {
     width: 225px;
     height: 225px;
     border: 7px solid #fff;
 }
 
-.team-member h4 {
-    margin-top: 25px;
-    margin-bottom: 0;
+.member h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-transform: none;
 }
 
-.team-member p {
+.member p {
     margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+.member p span {
+    padding: 8px;
 }
 
 section#contact {
